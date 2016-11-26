@@ -5,17 +5,24 @@ using UnityEngine.SceneManagement;
 public class changeScenes : MonoBehaviour {
 
     public string sceneName;
+    public float waitSec = 0;
 
-    void Start()
+    public void Start()
     {
-        Debug.Log("Start");
-        ChangeScene("f");
+        StartCoroutine(WaitSeconds(waitSec));
     }
 
-    public void ChangeScene (string nm) {
-        Debug.Log("화면 전환");
-        Debug.Log(sceneName.ToString());
-        //new WaitForSeconds(5);
-        SceneManager.LoadScene(sceneName.ToString());
+    public void ChangeScene (string sceneNm) {
+        Debug.Log("==ChangeScene==");
+        Debug.Log("Scene Name : " + sceneNm);
+
+        SceneManager.LoadScene(sceneNm);
+    }
+
+    IEnumerator WaitSeconds(float num)
+    {
+        Debug.Log("Waiting Seconds : " + num);
+        yield return new WaitForSeconds(num);
+        ChangeScene(sceneName);
     }
 }
