@@ -9,6 +9,7 @@ public class ChangeScenes : MonoBehaviour {
 
     public void Start()
     {
+        Screen.SetResolution(480, 800, true);
         StartCoroutine(ChangeScene(waitSec, sceneName));
     }
 
