@@ -7,9 +7,5 @@ public class ViewSizeManager : MonoBehaviour {
 	void Start () {
         Screen.SetResolution(480, 800, true);
     }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

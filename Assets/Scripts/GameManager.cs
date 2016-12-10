@@ -6,7 +6,15 @@ public class GameManager : MonoBehaviour
 
     public static GameManager instance = null;
 
-    public Canvas screen1_canvas; public Canvas screen2_canvas; public CanvasGroup screen1; public CanvasGroup screen2;
+    public Canvas Status_canvas;
+    public Canvas Schedule_canvas;
+    public Canvas Store_canvas;
+    public Canvas Settings_canvas;
+    public CanvasGroup Status;
+    public CanvasGroup Schedule;
+    public CanvasGroup Store;
+    public CanvasGroup Settings;
+    public Canvas Active_canvas;
 
     void Awake()
     {
@@ -14,17 +22,62 @@ public class GameManager : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
-        screen1.alpha = 1; screen1_canvas.enabled = true;
-        screen2.alpha = 0; screen2_canvas.enabled = false;
+        Status.alpha = 1; Status_canvas.enabled = true;
+        Schedule.alpha = 0; Schedule_canvas.enabled = false;
+        Store.alpha = 0; Store_canvas.enabled = false;
+        Settings.alpha = 0; Settings_canvas.enabled = false;
+        //Active_canvas = Status_canvas;
     }
 
-    public void Screen1_Active()
+    public void Status_Active()
     {
-        screen1.alpha = 1; screen1.interactable = true; screen1_canvas.enabled = true; screen2_canvas.enabled = false;
+        Status.alpha = 1;
+        Status.interactable = true;
+        Status_canvas.enabled = true;
+        if (Active_canvas.name != Status_canvas.name)
+        {
+            Active_canvas.enabled = false;
+            Active_canvas = Status_canvas;
+        }
     }
 
-    public void Screen2_Active()
+    public void Schedule_Active()
     {
-        screen2.alpha = 1; screen2.interactable = true; screen1_canvas.enabled = false; screen2_canvas.enabled = true;
+        Schedule.alpha = 1;
+        Schedule.interactable = true;
+
+        Schedule_canvas.enabled = true;
+        if (Active_canvas.name != Schedule_canvas.name)
+        {
+            Active_canvas.enabled = false;
+            Active_canvas = Schedule_canvas;
+        }
     }
+
+    public void Store_Active()
+    {
+        Store.alpha = 1;
+        Store.interactable = true;
+
+        Store_canvas.enabled = true;
+        if (Active_canvas.name != Store_canvas.name)
+        {
+            Active_canvas.enabled = false;
+            Active_canvas = Store_canvas;
+        }
+    }
+
+    public void Settings_Active()
+    {
+        Settings.alpha = 1;
+        Settings.interactable = true;
+
+        Settings_canvas.enabled = true;
+        if (Active_canvas.name != Settings_canvas.name)
+        {
+            Active_canvas.enabled = false;
+            Active_canvas = Settings_canvas;
+        }
+    }
+
 }
