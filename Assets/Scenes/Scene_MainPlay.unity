@@ -833,55 +833,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 428406814}
---- !u!1 &506184616
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 506184618}
-  - 114: {fileID: 506184617}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &506184617
+--- !u!114 &506184617 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 506184616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
+  m_PrefabParentObject: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+    type: 2}
+  m_PrefabInternal: {fileID: 649736702}
   m_Script: {fileID: 11500000, guid: 61b5ae8fed425434fa071689f3691527, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Status_canvas: {fileID: 294319905}
-  Schedule_canvas: {fileID: 1337961072}
-  Store_canvas: {fileID: 532363692}
-  Settings_canvas: {fileID: 1646503838}
-  Status: {fileID: 294319907}
-  Schedule: {fileID: 1337961069}
-  Store: {fileID: 532363689}
-  Settings: {fileID: 1646503835}
-  Active_canvas: {fileID: 294319905}
---- !u!4 &506184618
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 506184616}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 80, y: 785, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
 --- !u!1 &532363688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,6 +1115,93 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 625111698}
+--- !u!1001 &649736702
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4000013709934856, guid: 4b55b52d6c8a50340a113aec4783b79b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013709934856, guid: 4b55b52d6c8a50340a113aec4783b79b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 785
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013709934856, guid: 4b55b52d6c8a50340a113aec4783b79b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013709934856, guid: 4b55b52d6c8a50340a113aec4783b79b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013709934856, guid: 4b55b52d6c8a50340a113aec4783b79b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013709934856, guid: 4b55b52d6c8a50340a113aec4783b79b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013709934856, guid: 4b55b52d6c8a50340a113aec4783b79b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000013709934856, guid: 4b55b52d6c8a50340a113aec4783b79b, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+        type: 2}
+      propertyPath: Status_canvas
+      value: 
+      objectReference: {fileID: 294319905}
+    - target: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+        type: 2}
+      propertyPath: Schedule_canvas
+      value: 
+      objectReference: {fileID: 1337961072}
+    - target: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+        type: 2}
+      propertyPath: Store_canvas
+      value: 
+      objectReference: {fileID: 532363692}
+    - target: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+        type: 2}
+      propertyPath: Settings_canvas
+      value: 
+      objectReference: {fileID: 1646503838}
+    - target: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+        type: 2}
+      propertyPath: Status
+      value: 
+      objectReference: {fileID: 294319907}
+    - target: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+        type: 2}
+      propertyPath: Schedule
+      value: 
+      objectReference: {fileID: 1337961069}
+    - target: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+        type: 2}
+      propertyPath: Store
+      value: 
+      objectReference: {fileID: 532363689}
+    - target: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+        type: 2}
+      propertyPath: Settings
+      value: 
+      objectReference: {fileID: 1646503835}
+    - target: {fileID: 114000010729179826, guid: 4b55b52d6c8a50340a113aec4783b79b,
+        type: 2}
+      propertyPath: Active_canvas
+      value: 
+      objectReference: {fileID: 294319905}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4b55b52d6c8a50340a113aec4783b79b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &688590019
 GameObject:
   m_ObjectHideFlags: 0

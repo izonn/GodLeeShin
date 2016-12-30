@@ -75,10 +75,12 @@
     <Compile Include="Assets\Scripts\ChangeScenes.cs" />
     <Compile Include="Assets\Scripts\DataControl.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\MainMenuManger.cs" />
     <Compile Include="Assets\Scripts\ScheduleFadeIn.cs" />
     <Compile Include="Assets\Scripts\SettingsFadeIn.cs" />
     <Compile Include="Assets\Scripts\StatusFadeIn.cs" />
     <Compile Include="Assets\Scripts\StoreFadeIn.cs" />
+    <Compile Include="Assets\Scripts\StoryManager.cs" />
     <Compile Include="Assets\Scripts\ViewSizeManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
