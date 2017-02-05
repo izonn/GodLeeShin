@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6395d50932cb3384497cd5a9c5c78909, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: {fileID: 0}
+  Scene: {fileID: 102900000, guid: 9ccead9b02d178040bb362f36c2c4c1f, type: 3}
   waitSec: 5
 --- !u!81 &932034748
 AudioListener:

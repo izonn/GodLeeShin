@@ -74,6 +74,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ChangeScenes.cs" />
     <Compile Include="Assets\Scripts\DataControl.cs" />
+    <Compile Include="Assets\Scripts\DevLogo\LogoFade.cs" />
+    <Compile Include="Assets\Scripts\DevLogo\LogoManager.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\MainMenuManger.cs" />
     <Compile Include="Assets\Scripts\ScheduleFadeIn.cs" />
