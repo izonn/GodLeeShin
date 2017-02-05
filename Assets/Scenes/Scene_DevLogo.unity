@@ -208,6 +208,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1017294029}
+  - 114: {fileID: 1017294028}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -215,6 +216,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1017294028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1017294027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6395d50932cb3384497cd5a9c5c78909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene: {fileID: 102900000, guid: 1a6fd78b22208874eb9f701777aa12ee, type: 3}
+  waitSec: 5
 --- !u!4 &1017294029
 Transform:
   m_ObjectHideFlags: 0
@@ -276,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
