@@ -3,6 +3,7 @@ using System.Collections;
 
 public class LogoFade : MonoBehaviour {
 
+    public double logoSpeed;
 	// Use this for initialization
 	void Start () {
         StartCoroutine(DoFade());
@@ -13,7 +14,7 @@ public class LogoFade : MonoBehaviour {
         CanvasGroup canvasGroup = GetComponent<CanvasGroup>();
         while (canvasGroup.alpha < 1)
         {
-            canvasGroup.alpha += Time.deltaTime * 2;
+            canvasGroup.alpha += Time.deltaTime * (float)logoSpeed;
             yield return null;
         }
         canvasGroup.interactable = true;

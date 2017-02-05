@@ -15,10 +15,10 @@ public class LogoManager : MonoBehaviour {
         else if (instance != this)
             Destroy(gameObject);
 
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
 
         //Logo.alpha = 0;
-        Logo_canvas.enabled = false;
+        //Logo_canvas.enabled = false;
     }
 
 }
